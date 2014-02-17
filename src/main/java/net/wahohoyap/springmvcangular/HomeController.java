@@ -25,6 +25,8 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		
+		logger.info("Request in index");
+		
 		model.addAttribute("name", "jason");
 		
 		return "home";
